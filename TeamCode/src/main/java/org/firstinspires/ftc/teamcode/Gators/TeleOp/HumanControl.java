@@ -45,6 +45,10 @@ import java.util.concurrent.TimeUnit;
 @TeleOp(name="Human control", group="Omnidirectional Control")
 public class HumanControl extends OpMode {
 
+    /* Constants */
+
+    public static final double ANGLE_OFFSET = 135;
+
     /* Declare OpMode members. */
     private RobotHardware robot;
 
@@ -82,8 +86,6 @@ public class HumanControl extends OpMode {
     public void start() {
         telemetry.clear();
 
-        robot.setClaw(0);
-
         // Run on start
         telemetry.addLine("Driver in control, inputs now will have effect on robot.");
     }
@@ -96,20 +98,18 @@ public class HumanControl extends OpMode {
         // might have to remove this
         telemetry.clear();
 
-        int i;
-
         /*
          * WHEEL MOVEMENT
          */
 
         // math for calculating standard control
 
-        double x = (double)  gamepad1.left_stick_x;
-        double y = (double) -gamepad1.left_stick_y;
+        double x = (double) gamepad1.left_stick_x;
+        double y = (double) gamepad1.left_stick_y;
 
-        double angle       = getAngle(x, y) + 135;
+        double angle       = getAngle(x, y);
         double linearSpeed = getMagnitude(x, y);
-        double rotarySpeed = (double) -gamepad1.right_stick_x;
+        double rotarySpeed = (double) gamepad1.right_stick_x;
 
         robot.moveBot(angle, linearSpeed, rotarySpeed);
 
@@ -117,56 +117,9 @@ public class HumanControl extends OpMode {
          * MOVEMENT TELEMETRY
          */
 
-        telemetry.addData("Angle:", angle);
-
-        /*
-         * GADGET CONTROL
-         */
-
-        robot.setClaw(gamepad2.right_stick_y);
-
-        telemetry.addData("Lift:", gamepad2.left_stick_y);
-
-//        if (gamepad2.left_stick_y != 0) {
-//
-//
-//            if (robot.leftLift.getMode() == DcMotor.RunMode.RUN_TO_POSITION) {
-//                robot.leftLift.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-//                robot.rightLift.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-//            }
-//
-//            robot.setPower(gamepad2.left_stick_y);
-//        }
-//        else {
-//            int left  = robot.leftLift.getCurrentPosition();
-//            int right = robot.rightLift.getCurrentPosition();
-//
-//            if (robot.leftLift.getMode() != DcMotor.RunMode.RUN_USING_ENCODER) {
-//                robot.leftLift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-//                robot.rightLift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-//
-//                robot.leftLift.setTargetPosition(left);
-//                robot.rightLift.setTargetPosition(right);
-//
-//                robot.leftLift.setPower(1);
-//                robot.rightLift.setPower(1);
-//            }
-//
-//        }
-
-        robot.setPower(gamepad2.left_stick_y);
-
-        // just for shits and giggles
-        setTheRobotOnFire();
-        blameItAllOnRyan();
-
-        telemetry.addData("Left Pos:", robot.leftLift.getCurrentPosition());
+        telemetry.addData("Direction:", angle);
 
     }
-
-    void setTheRobotOnFire() {  }
-    void blameItAllOnRyan()  {  }
-
 
     private double max(double a, double b) {
         return (a > b) ? (a) : (b);
@@ -196,7 +149,7 @@ public class HumanControl extends OpMode {
             angle -= 360;
         }
 
-        return angle;
+        return angle + ANGLE_OFFSET;
     }
 
     // Returns the magnitude of a vector with components a and b

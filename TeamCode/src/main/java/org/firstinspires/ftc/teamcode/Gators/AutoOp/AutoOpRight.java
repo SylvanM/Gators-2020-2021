@@ -67,6 +67,8 @@ public class AutoOpRight extends LinearOpMode {
 
         robot.moveDistance(0, robot.DISTANCE_TO_GATE);
 
+
+
         // then pick up the thing
 
     }

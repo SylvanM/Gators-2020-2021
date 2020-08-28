@@ -42,13 +42,6 @@ public class RobotHardware
 
     /* Constants and properties */
 
-    public final int DOWN_POSITION = 0;
-    public final int UP_POSITION   = 600;
-
-    /* AUTO OP Constants (distances) */
-    public final double OUTWARD_DISTANCE = 0.2;
-    public final double DISTANCE_TO_GATE = 0.6;
-
     // in radians per second
     public final double ANGULAR_SPEED = Math.PI * 3  / 4.7;
     public final double LINEAR_SPEED  = 1.75 / 3.43; // meters per second
@@ -58,21 +51,7 @@ public class RobotHardware
             1.0, 1.0
     };
 
-    // power for lift
-    private double liftPower = 20.0;
-
-    private int height;
-
     private DcMotor[] motors = new DcMotor[4];
-
-    /* lift motors */
-    public DcMotor leftLift;
-    public DcMotor rightLift;
-
-    /* servos */
-    public CRServo claw;
-
-    private static final double LIFT_SPEED = 2.50;
 
     /* local OpMode members. */
     private ElapsedTime period = new ElapsedTime();
@@ -95,11 +74,7 @@ public class RobotHardware
      * @param hwMap Hardware map to use to initialize the hardware class
      */
     public void init(HardwareMap hwMap) {
-
         setRobotProperties(hwMap);
-
-
-
     }
 
     // MARK: Methods
@@ -120,106 +95,13 @@ public class RobotHardware
             motors[k].setDirection( (k % 2 == 0) ? (DcMotor.Direction.REVERSE) : (DcMotor.Direction.FORWARD) );
         }
 
-        leftLift  = map.get(DcMotor.class, "left_lift");
-        rightLift = map.get(DcMotor.class, "right_lift");
-
-        if ( leftLift  != null ) {
-            leftLift.setMode      (DcMotor.RunMode.RUN_USING_ENCODER);
-//            leftLift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            leftLift.setDirection (DcMotorSimple.Direction.REVERSE);
-        }
-
-        if ( rightLift != null ) {
-           rightLift.setMode      (DcMotor.RunMode.RUN_USING_ENCODER);
-//            rightLift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-//            rightLift.setDirection (DcMotorSimple.Direction.REVERSE);
-        }
-
-        claw = map.get(CRServo.class, "claw");
-        height = DOWN_POSITION;
-    }
-
-    // MARK: Gadget functions
-
-//    public void lift(double power) {
-//        double speed = power * liftPower;
-//        leftLift.
-//
-//        setPower(-speed);
-//        rightLift.setPower(speed);
-//    }
-
-    public void setClaw(double power) {
-        if (claw == null)
-            return;
-        //claw.setPosition((power / 2) + 0.5)
-        claw.setPower(power);
     }
 
     private void setMotor(int motorIndex, double power, boolean weighted) {
         if ( motors[motorIndex] == null )
             return;
+
         motors[motorIndex].setPower(power * ( (weighted) ? (weights[motorIndex]) : (1)));
-    }
-
-    public void liftBy(double x) {
-
-        if (leftLift == null)
-            return;
-
-        int deltaPos  = (int)(liftPower * x);
-        int newHeight = height + deltaPos;
-
-        if (newHeight < DOWN_POSITION) {
-            newHeight = DOWN_POSITION;
-        }
-
-        if (newHeight > UP_POSITION) {
-            newHeight = UP_POSITION;
-        }
-
-        height = newHeight;
-        updateLift();
-    }
-
-    public void updateLift() {
-        setLiftHeight(height);
-    }
-
-    // sets the lift to a specific position
-    public void setLiftHeight(int height) {
-
-        if (leftLift != null) {
-            leftLift.setTargetPosition(height);
-            leftLift.setPower(1);
-        }
-
-        if (rightLift != null) {
-            rightLift.setTargetPosition(height);
-            rightLift.setPower(1);
-        }
-
-    }
-
-    public void setPower(double height) {
-
-        if (leftLift != null) {
-            leftLift.setPower(height);
-        }
-
-        if (rightLift != null) {
-            rightLift.setPower(height);
-        }
-
-//        int newL = leftLift.getCurrentPosition() + (int)(height * 5);
-//        int newR = rightLift.getCurrentPosition() + (int)(height * 5);
-//
-//        leftLift.setTargetPosition(newL);
-//        rightLift.setTargetPosition(newR);
-//
-//        leftLift.setPower(1);
-//        rightLift.setPower(1);
-
     }
 
     /**
