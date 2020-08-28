@@ -27,78 +27,41 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package org.firstinspires.ftc.teamcode.Gators.TeleOp;
+package org.firstinspires.ftc.teamcode.Gators.AutoOp;
 
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.robot.Robot;
+import com.qualcomm.robotcore.util.ElapsedTime;
 
-import org.firstinspires.ftc.robotcore.external.navigation.Position;
-import org.firstinspires.ftc.robotcore.external.navigation.Velocity;
+// hardware class
 import org.firstinspires.ftc.teamcode.Gators.Hardware.*;
 
 import java.util.concurrent.TimeUnit;
 
-// GAMEPAD 1 controls MOTION of robot
-// GAMEPAD 2 controls ACTIONS of robot (moving the arm, stuff like that)
 
-@TeleOp(name="Lift test", group="Omnidirectional Control")
-public class LiftTest extends OpMode {
+/*
+ * NOT A DRIVER MODE
+ * This is the Robot's automonous driver mode
+ */
 
-    private RobotHardware robot;
+@Autonomous(name="Right", group="AutoOp")
+//@Disabled
+public class SimpleAutoOp extends LinearOpMode {
 
-    int height;
+    /* Declare OpMode members. */
+    private RobotHardware   robot;
+    private ElapsedTime     runtime = new ElapsedTime();
 
-    /*
-     * Code to run ONCE when the driver hits INIT
-     */
     @Override
-    public void init() {
-        robot = new RobotHardware(hardwareMap);
-    }
+    public void runOpMode() throws InterruptedException {
 
-    /*
-     * Code to run REPEATEDLY after the driver hits INIT, but before they hit PLAY
-     */
-    @Override
-    public void init_loop() {
-        telemetry.addLine("In loop");
-    }
+        RobotHardware robot = new RobotHardware(hardwareMap);
 
-    /*
-     * Code to run ONCE when the driver hits PLAY
-     */
-    @Override
-    public void start() {
-        telemetry.clear();
-        // Run on start
-        telemetry.addLine("Driver in control, inputs now will have effect on robot.");
+        waitForStart();
 
-        height = robot.DOWN_POSITION;
-    }
-
-    /*
-     * Code to run REPEATEDLY after the driver hits PLAY but before they hit STOP
-     */
-    @Override
-    public void loop() {
-
-        height += (int)(5 * gamepad2.left_stick_y);
-
-        robot.setLiftHeight(height);
-
-        telemetry.addData("Left position:", robot.leftLift.getCurrentPosition());
-        telemetry.addData("Right position:", robot.rightLift.getCurrentPosition());
-
-    }
-
-    /*
-     * Code to run ONCE after the driver hits STOP
-     */
-    @Override
-    public void stop() {
-
-        // Code runs on stop
+        // then pick up the thing
 
     }
 

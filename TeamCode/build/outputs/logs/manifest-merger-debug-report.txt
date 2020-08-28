@@ -1,37 +1,37 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
-MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-47:12
+ADDED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-47:12
 MERGED from [:RobotCore-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/479b087adad86c92ed5ffe20b9c647ad/RobotCore-release/AndroidManifest.xml:2:1-98:12
 MERGED from [:Hardware-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/30fb0fc6408299bd8270d2e72c451f16/Hardware-release/AndroidManifest.xml:2:1-11:12
 MERGED from [:FtcCommon-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/8fb98d560cb89aae1e5b2ebcc932dafc/FtcCommon-release/AndroidManifest.xml:3:1-235:12
 MERGED from [:WirelessP2p-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/fda35a8a97c01d66ecfb9b40bb4413b0/WirelessP2p-release/AndroidManifest.xml:2:1-11:12
 MERGED from [:Inspection-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/a0b560e6eace3fc8bc773bbe873acdf3/Inspection-release/AndroidManifest.xml:2:1-32:12
 MERGED from [:Blocks-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/a3cbed51f0a46c56fa91737d967b9511/Blocks-release/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
 	package
-		ADDED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:9:5-45
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:9:5-45
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-		ADDED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-		ADDED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:10:5-63
+		ADDED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:10:5-63
 application
-ADDED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml:11:5-19
-MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-45:19
-MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-45:19
+ADDED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml:11:5-19
+MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-45:19
+MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-45:19
 MERGED from [:RobotCore-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/479b087adad86c92ed5ffe20b9c647ad/RobotCore-release/AndroidManifest.xml:77:5-96:19
 MERGED from [:RobotCore-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/479b087adad86c92ed5ffe20b9c647ad/RobotCore-release/AndroidManifest.xml:77:5-96:19
 MERGED from [:FtcCommon-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/8fb98d560cb89aae1e5b2ebcc932dafc/FtcCommon-release/AndroidManifest.xml:23:5-233:19
@@ -41,23 +41,23 @@ MERGED from [:Inspection-release:] /Users/sylvanm/.gradle/caches/transforms-2/fi
 MERGED from [:Blocks-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/a3cbed51f0a46c56fa91737d967b9511/Blocks-release/AndroidManifest.xml:18:5-39:19
 MERGED from [:Blocks-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/a3cbed51f0a46c56fa91737d967b9511/Blocks-release/AndroidManifest.xml:18:5-39:19
 	android:label
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-41
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-41
 	android:largeHeap
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-33
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-33
 	android:icon
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-45
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-45
 	android:allowBackup
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-35
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-45
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-45
 	android:name
 		ADDED from [:RobotCore-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/479b087adad86c92ed5ffe20b9c647ad/RobotCore-release/AndroidManifest.xml:77:18-97
 uses-sdk
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
 MERGED from [:RobotCore-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/479b087adad86c92ed5ffe20b9c647ad/RobotCore-release/AndroidManifest.xml:7:5-9:41
 MERGED from [:RobotCore-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/479b087adad86c92ed5ffe20b9c647ad/RobotCore-release/AndroidManifest.xml:7:5-9:41
 MERGED from [:Hardware-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/30fb0fc6408299bd8270d2e72c451f16/Hardware-release/AndroidManifest.xml:7:5-9:41
@@ -70,58 +70,58 @@ MERGED from [:Inspection-release:] /Users/sylvanm/.gradle/caches/transforms-2/fi
 MERGED from [:Inspection-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/a0b560e6eace3fc8bc773bbe873acdf3/Inspection-release/AndroidManifest.xml:7:5-9:41
 MERGED from [:Blocks-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/a3cbed51f0a46c56fa91737d967b9511/Blocks-release/AndroidManifest.xml:7:5-9:41
 MERGED from [:Blocks-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/a3cbed51f0a46c56fa91737d967b9511/Blocks-release/AndroidManifest.xml:7:5-9:41
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-		ADDED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-		ADDED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
-		INJECTED from /Users/sylvanm/Programming/Robotics/RHS-Gators/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/sylvanm/Programming/Robotics/Gators 2020-2021/TeamCode/src/main/AndroidManifest.xml
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-81
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-78
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-78
 activity#org.firstinspires.ftc.robotcontroller.internal.FtcRobotControllerActivity
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-39:20
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-39:20
 	android:label
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-45
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-45
 	android:launchMode
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-44
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-44
 	android:configChanges
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-59
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-59
 	android:name
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-101
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-101
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-31:29
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-31:29
 category#android.intent.category.LAUNCHER
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:17-77
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:27-74
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:27-74
 action#android.intent.action.MAIN
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-69
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-66
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-66
 intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-34:29
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-34:29
 action#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:17-90
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:17-90
 	android:name
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:25-87
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:25-87
 meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-38:57
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-38:57
 	android:resource
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:17-54
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:17-54
 	android:name
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:17-79
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:17-79
 service#com.qualcomm.ftccommon.FtcRobotControllerService
-ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:9-44:38
+ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:9-44:38
 	android:enabled
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-35
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-35
 	android:name
-		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/RHS-Gators/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-76
+		ADDED from [:FtcRobotController] /Users/sylvanm/Programming/Robotics/Gators 2020-2021/FtcRobotController/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [:RobotCore-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/479b087adad86c92ed5ffe20b9c647ad/RobotCore-release/AndroidManifest.xml:11:5-13:35
 MERGED from [:FtcCommon-release:] /Users/sylvanm/.gradle/caches/transforms-2/files-2.1/8fb98d560cb89aae1e5b2ebcc932dafc/FtcCommon-release/AndroidManifest.xml:12:5-76
