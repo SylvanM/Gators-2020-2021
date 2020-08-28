@@ -36,11 +36,27 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.robot.Robot;
 import com.qualcomm.robotcore.util.ElapsedTime;
+import com.qualcomm.hardware.bosch.BNO055IMU;
+
+import org.firstinspires.ftc.robotcore.external.Telemetry;
+import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
+import org.firstinspires.ftc.robotcore.external.navigation.AxesOrder;
+import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
+import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
+import org.firstinspires.ftc.robotcore.external.navigation.Position;
+import org.firstinspires.ftc.robotcore.external.navigation.Velocity;
 
 public class RobotHardware
 {
 
+    /*
+     * Telemetry object so the hardware can relay telemetry
+     */
+    Telemetry telemetry;
+
     /* Constants and properties */
+
+    public static final double ANGLE_OFFSET = 135;
 
     // in radians per second
     public final double ANGULAR_SPEED = Math.PI * 3  / 4.7;
@@ -51,7 +67,19 @@ public class RobotHardware
             1.0, 1.0
     };
 
+    /* Hardware Components */
+
+    /*
+     * The motors on the robot that make it move (aka the wheels)
+     */
     private DcMotor[] motors = new DcMotor[4];
+
+    /*
+     * Onboard sensors
+     */
+
+    // Inertial Measurement Unit
+    private BNO055IMU imu;
 
     /* local OpMode members. */
     private ElapsedTime period = new ElapsedTime();
@@ -60,10 +88,10 @@ public class RobotHardware
     // construct with just map and instructions and value for lift power
     public RobotHardware(HardwareMap ahwMap, double power) {
         setRobotProperties(ahwMap);
-        liftPower = power;
     }
 
-    public RobotHardware(HardwareMap ahwMap) {
+    public RobotHardware(HardwareMap ahwMap, Telemetry telem) {
+        telemetry = telem;
         setRobotProperties(ahwMap);
     }
 
@@ -73,7 +101,8 @@ public class RobotHardware
      * Function that initializes the robot from a hardware map
      * @param hwMap Hardware map to use to initialize the hardware class
      */
-    public void init(HardwareMap hwMap) {
+    public void init(HardwareMap hwMap, Telemetry telem) {
+        telemetry = telem;
         setRobotProperties(hwMap);
     }
 
@@ -85,14 +114,44 @@ public class RobotHardware
         int k;
         String motorName;
 
+        telemetry.addLine("Initializing robot hardware");
+
+        telemetry.addLine("Initializing wheel motors...");
+        // initialize the wheel motors
         for ( k = 0; k < 4; ++k ) {
             // get motor name
             motorName =  (k < 2)      ? "front_" : "back_";
             motorName += (k % 2 == 0) ? "left" : "right";
 
             motors[k] = map.get(DcMotor.class, motorName);
-            if (motors[k] == null) continue;
+
+            if (motors[k] == null) {
+                telemetry.addLine("Could not find motor '" + motorName + "', skipping.");
+                continue;
+            }
+
             motors[k].setDirection( (k % 2 == 0) ? (DcMotor.Direction.REVERSE) : (DcMotor.Direction.FORWARD) );
+            motors[k].setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+            motors[k].setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+            telemetry.addLine("Initialized '" + motorName + "'");
+        }
+
+        // set up the IMU
+        telemetry.addLine("Initializing IMU...");
+        imu = map.get(BNO055IMU.class, "imu");
+
+        if ( imu != null ) {
+            BNO055IMU.Parameters parameters = new BNO055IMU.Parameters();
+
+            parameters.mode                = BNO055IMU.SensorMode.IMU;
+            parameters.angleUnit           = BNO055IMU.AngleUnit.DEGREES;
+            parameters.accelUnit           = BNO055IMU.AccelUnit.METERS_PERSEC_PERSEC;
+            parameters.loggingEnabled      = false;
+
+            imu.initialize(parameters);
+            telemetry.addLine("Initialized IMU.");
+        } else {
+            telemetry.addLine("Could not find IMU.");
         }
 
     }
@@ -105,7 +164,7 @@ public class RobotHardware
     }
 
     /**
-     * Function that will move the robot
+     * Moves the robot a certain distance in a certain direction
      * @param angle to calculate angle and magnitude
      * @param distance to set the distance to travel at max speed
      */
@@ -115,7 +174,7 @@ public class RobotHardware
         double deltaTime;
         do {
             deltaTime = period.milliseconds() - startTime;
-            moveBot(angle - 135, 1, 0);
+            moveBot(angle, 1, 0);
         } while (deltaTime <= time);
     }
 

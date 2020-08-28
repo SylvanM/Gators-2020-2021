@@ -29,13 +29,16 @@
 
 package org.firstinspires.ftc.teamcode.Gators.TeleOp;
 
+import org.firstinspires.ftc.teamcode.Gators.*;
+
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.robot.Robot;
 
 import org.firstinspires.ftc.robotcore.external.navigation.Position;
 import org.firstinspires.ftc.robotcore.external.navigation.Velocity;
-import org.firstinspires.ftc.teamcode.Gators.Hardware.*;
+import org.firstinspires.ftc.teamcode.Gators.Hardware.RobotHardware;
 
 import java.util.concurrent.TimeUnit;
 
@@ -47,7 +50,7 @@ public class HumanControl extends OpMode {
 
     /* Constants */
 
-    public static final double ANGLE_OFFSET = 135;
+
 
     /* Declare OpMode members. */
     private RobotHardware robot;
@@ -66,9 +69,7 @@ public class HumanControl extends OpMode {
         /* Initialize the hardware variables.
          * The init() method of the hardware class does all the work here
          */
-        robot = new RobotHardware(hardwareMap);
-
-        height = robot.DOWN_POSITION;
+        robot = new RobotHardware(hardwareMap, telemetry);
     }
 
     /*
@@ -121,10 +122,6 @@ public class HumanControl extends OpMode {
 
     }
 
-    private double max(double a, double b) {
-        return (a > b) ? (a) : (b);
-    }
-
     /*
      * Code to run ONCE after the driver hits STOP
      */
@@ -149,7 +146,7 @@ public class HumanControl extends OpMode {
             angle -= 360;
         }
 
-        return angle + ANGLE_OFFSET;
+        return angle + RobotHardware.ANGLE_OFFSET;
     }
 
     // Returns the magnitude of a vector with components a and b
@@ -160,6 +157,7 @@ public class HumanControl extends OpMode {
         double sum = (double)aSquared + (double)bSquared;
 
         return Math.sqrt(sum);
+
     }
 
 
